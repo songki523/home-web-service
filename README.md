@@ -5,17 +5,14 @@
 - Flask(python)
 - React
 
-## Pre Processors
-- Sass
-
-## Frontend
+## Frontend (Sean)
 - Flexbox
-- Sass
 - React (later)
+### Pre Processors
+- Sass
 
-## Backend 
+## Backend (Keith)
 - Postgres DB
-- Flask
 ### Flask
 - Install packages by running `pip install -r requirements.txt`
 - Run the application `python3 app.py`
@@ -30,4 +27,6 @@
 ## Installing Python Virtual Environments
 - Recomended for PiP package management
 - Documentation https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
-- activate python virtual environments (venv) `./env/bin/activate`
+- activate python virtual environments (venv) `./env/bin/activate` - for windows
+- `source env/bin/activate` for mac
+- two branches (front-end, back-end)
