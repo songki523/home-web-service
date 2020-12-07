@@ -4,13 +4,14 @@ from csv_handler import CsvHandler
 import datetime, os
 
 app = Flask(__name__)
-app.config["CLIENT_CSV"] = os.path.expanduser("~/web-apps/flask/csv")
+app.config["CLIENT_CSV"] = os.getcwd() + "/csv"
 
 _today = datetime.date.today()
 _year = _today.year
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    print(os.getcwd())
     if request.method == 'POST':
         _collections = []
         name = request.form['name']

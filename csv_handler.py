@@ -8,7 +8,7 @@ class CsvHandler:
     
     # Save it as csv file
     def store_into_csv(self, collections):
-        relative_path = os.path.expanduser("~/web-apps/flask/csv")
+        relative_path = os.getcwd() + "/csv"
         _file_name = relative_path + "/{}.csv".format(self.filename)
         file_exists = os.path.isfile(_file_name)
 

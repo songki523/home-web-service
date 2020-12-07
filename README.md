@@ -8,17 +8,21 @@
 ## Frontend (Sean)
 - Flexbox
 - React (later)
+
 ### Pre Processors
 - Sass
 
 ## Backend (Keith)
 - Postgres DB
+
 ### Flask
 - Install packages by running `pip install -r requirements.txt`
 - Run the application `python3 app.py`
 
 ## Dev-Ops 
-- Docker (later)
+- Docker (Completed Dec 2020)
+    - Building docker image: `docker build -t flask-scheduler:latest .`
+    - Running Container: `docker run --name flask-scheduler -d -p 7200:5000 --restart unless-stopped flask-scheduler`
 
 ## Structures
 - Full Stack application (start)
