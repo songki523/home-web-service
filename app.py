@@ -6,14 +6,13 @@ import datetime, os
 app = Flask(__name__)
 app.config["CLIENT_CSV"] = os.getcwd() + "/csv"
 
-_today = datetime.date.today()
-_year = _today.year
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    print(os.getcwd())
+    # print(os.getcwd())
     if request.method == 'POST':
         _collections = []
+        _today = datetime.date.today()
+        _year = _today.year
         name = request.form['name']
         month = request.form['month']
         days = request.form['days']
